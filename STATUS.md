@@ -153,48 +153,94 @@
 
 ---
 
-## Current Workflow
+## Current Status: PILOT COMPLETE & PAPER DRAFTED ✓
 
-### Step 1: Structural Analysis
-```bash
-cd ~/Desktop/benign-violations
-source venv/bin/activate
-python3 experiments/exp1_generation/scripts/analyze_structure.py
-```
+**Date:** October 3, 2025  
+**Phase:** Pilot complete, ready for scale-up when desired  
+**Status:** Paper drafted, code ready, findings documented
 
-**Output:** Objective structural properties of all 131 jokes
+### Pilot Results Summary
 
-### Step 2: Surprise Analysis
-```bash
-python3 experiments/exp1_generation/scripts/analyze_surprise.py 30
-```
+**STRONG EVIDENCE FOR H3 (HYBRID HYPOTHESIS)**
 
-**Output:** Computational surprise scores for sample of jokes  
-**Time:** 2-3 minutes  
-**Cost:** ~$2-3
+Three converging sources of evidence:
 
-### Step 3: Explanation Collection
-```bash
-python3 experiments/exp2_explanation/scripts/collect_explanations.py 40
-```
+1. **Generation Success Gradient ✓**
+   - Linguistic: 91.1% (highest)
+   - Others: ~67%
+   - **Interpretation:** Linguistic humor easiest to generate
 
-**Output:** Model explanations for 40 jokes (120 total with 3 models)  
-**Time:** 5-10 minutes  
-**Cost:** ~$5-10
+2. **Predictability Gradient ✓ (STRONGEST FINDING)**
+   - Linguistic: 0.696 (most predictable)
+   - Physical: 0.918
+   - Social: 0.942
+   - Dark: 0.908
+   - **Interpretation:** Models understand semantic mechanisms (can predict linguistic punchlines) but not embodied mechanisms
 
-### Step 4: Explanation Analysis
-```bash
-python3 experiments/exp2_explanation/scripts/analyze_explanations.py
-```
+3. **Explanation Quality ✓ (Qualitative Analysis)**
+   - Linguistic: Models correctly cite semantic features (wordplay, double meaning)
+   - Physical: Models INCORRECTLY explain via semantic features (metaphor, absurdity) instead of embodied features (collision, pain)
+   - **Interpretation:** Models lack embodied understanding, explain all humor as semantic
 
-**Output:** Feature coding of explanations, H3 test results
+**Scientific Conclusion:** Pilot provides moderate to strong preliminary evidence that LLMs show computational dissociation between semantic and embodied humor, supporting embodied cognition theories.
 
-### Step 5: Comprehensive Report
-```bash
-python3 experiments/exp1_generation/scripts/comprehensive_analysis.py
-```
+---
 
-**Output:** Synthesized evidence across all measures
+## Outputs Created
+
+### 1. Pilot Paper Draft ✓
+**File:** `PILOT_PAPER_DRAFT.md` (artifact)
+**Status:** Ready for arXiv submission
+**Key sections:**
+- Abstract with findings
+- Methods (computational measures)
+- Results (converging evidence)
+- Discussion (H3 support, limitations)
+- Honest limitation reporting (small N, keyword detection issues)
+
+### 2. Scaling Code ✓
+**Files:**
+- `experiments/exp1_generation/scripts/full_study_generation.py`
+- `experiments/exp2_explanation/scripts/full_study_explanations.py`
+- `docs/SCALING_PLAN.md`
+
+**Parameters:**
+- N=300 jokes (75 per category)
+- Models: GPT-4o, Claude (exclude Gemini)
+- Temperature: 0.7 (optimal)
+- Cost estimate: $190-355
+- Timeline: 2 weeks intensive
+
+### 3. Documentation ✓
+- `STATUS.md` (this file)
+- `SCALING_PLAN.md` (detailed roadmap)
+- All analysis scripts documented
+- Code comments throughout
+
+---
+
+## Next Steps (When Ready to Scale)
+
+### Option A: Submit Pilot Paper
+1. Copy draft to `docs/pilot_paper.md`
+2. Review and edit
+3. Post to arXiv
+4. Submit to conference (CogSci, ACL)
+5. Wait for feedback before scaling
+
+### Option B: Scale Up Immediately
+1. Run `full_study_generation.py` ($50-75, 45-60 min)
+2. Run `full_study_explanations.py` ($135-270, 30-60 min)
+3. Manual validation coding (2-3 days)
+4. Statistical analysis (2-3 days)
+5. Write full paper (1 week)
+6. Submit to journal
+
+### Option C: Hybrid (Recommended)
+1. Post pilot to arXiv (establishes priority)
+2. Take break (avoid burnout)
+3. Get community feedback
+4. Decide on scaling based on interest
 
 ---
 
