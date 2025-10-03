@@ -1,0 +1,10 @@
+BENIGN VIOLATIONS: COMPREHENSIVE ANALYSIS REPORT
+======================================================================
+
+  Category Structural Validity Surprise Score Feature Citation
+linguistic             100.00%          0.696 100.00% semantic
+  physical             100.00%          0.918  50.00% embodied
+    social             100.00%          0.942   100.00% social
+      dark             100.00%          0.908    96.67% threat
+
+Generated: 2025-10-03 12:31:41

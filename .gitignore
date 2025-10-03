@@ -1,0 +1,40 @@
+# Environment
+.env
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# API Keys and Secrets
+*.key
+secrets/
+credentials/
+
+# Data files (don't commit raw outputs)
+data/raw/*.json
+data/raw/*.csv
+experiments/*/outputs/*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
